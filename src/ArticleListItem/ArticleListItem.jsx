@@ -8,11 +8,11 @@ const ArticleListItem = (props) => {
   const onClick = useCallback(
     event => {
       event.preventDefault();
-      setText(buttonText == "Show less" ? "Show more" : "Show less");
+      setText(buttonText === "Show less" ? "Show more" : "Show less");
     },
     [buttonText]
   );
-  const showLess = buttonText == "Show less";
+  const showLess = buttonText === "Show less";
   let content;
   if (showLess) {
     content = <div>
