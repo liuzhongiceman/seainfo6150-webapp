@@ -8,11 +8,11 @@ const ArticleList = (props) => {
   
   if (props.articles.length) {
     displayContent = (
-      <ul className={styles.list}>
+      <div className={styles.list}>
         {props.articles.map((article, index) => {
           return <ArticleListItem article={article} key={index}></ArticleListItem>
         })}
-      </ul>
+      </div>
     )
   } else {
     displayContent = <div>You have no data!</div>;
