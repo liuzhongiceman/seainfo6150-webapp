@@ -4,3 +4,10 @@
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   background-color: gray;
 }
+
+@media (min-width: 120px) {
+  .list {
+    grid-gap: 30px;
+    background-color: white;
+  }
+}
