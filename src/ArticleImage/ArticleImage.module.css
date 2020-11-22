@@ -1,0 +1,19 @@
+img {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+h2 {
+  color: #c00;
+  font-size: 2em;
+  margin: 0 0 20px;
+}
+
+@media screen and (min-width: 525px) {
+  img {
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid red;
+  }
+}
